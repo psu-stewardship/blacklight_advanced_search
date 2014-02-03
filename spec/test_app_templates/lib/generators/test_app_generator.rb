@@ -15,7 +15,7 @@ class TestAppGenerator < Rails::Generators::Base
   def run_blacklight_generator
     say_status("warning", "GENERATING BL", :yellow)       
 
-    generate 'blacklight', '--marc'
+    generate 'blacklight:install', '--marc'
   end
 
   def run_blacklight_advanced_search
