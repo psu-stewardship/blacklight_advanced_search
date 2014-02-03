@@ -67,7 +67,9 @@ describe "Blacklight Advanced Search Form" do
 
     it "scope searches to fields" do
       fill_in "title", :with => "Medicine"
-      click_on "Search"
+      within('#search-navbar') do
+        click_button "Search"
+      end
       page.should have_content "Remove constraint Title: Medicine"
       page.should have_content "2007020969"
     end

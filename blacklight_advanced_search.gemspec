@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
 
 
   s.add_dependency "blacklight", "5.0.0.pre1"
+  s.add_dependency "blacklight_marc"
   s.add_dependency "parslet"
 
   s.add_dependency "rails"
@@ -27,5 +28,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency 'launchy'
-  s.add_development_dependency 'jettywrapper'
+  s.add_development_dependency 'jettywrapper', '1.5.0'
 end

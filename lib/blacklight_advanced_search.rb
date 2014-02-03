@@ -1,4 +1,6 @@
 module BlacklightAdvancedSearch
+  require 'active_record'
+
   autoload :Controller, 'blacklight_advanced_search/controller'
   autoload :RenderConstraintsOverride, 'blacklight_advanced_search/render_constraints_override'
   autoload :CatalogHelperOverride, 'blacklight_advanced_search/catalog_helper_override'
